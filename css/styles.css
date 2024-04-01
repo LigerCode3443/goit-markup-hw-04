@@ -74,6 +74,7 @@ img {
   color: #2e2f42;
   padding-top: 24px;
   padding-bottom: 24px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current {
   position: relative;
@@ -92,7 +93,6 @@ img {
 .header-item:hover,
 .header-item:focus {
   color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address {
@@ -113,11 +113,11 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #434455;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts:hover,
 .contacts:focus {
   color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* #endregion header */
@@ -177,7 +177,7 @@ img {
 .button-styles:hover,
 .button-styles:focus {
   background-color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* #endregion section zero */
@@ -290,11 +290,14 @@ img {
   background-color: #4d5ae5;
   width: 40px;
   height: 40px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.swg-sociaal {
+  fill: #f4f4fd;
 }
 .svg-team-social:hover,
-.svg-team-social:active {
+.svg-team-social:focus {
   background-color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* #endregion section team */
 /* #region section portfolio  */
@@ -311,13 +314,20 @@ img {
   width: calc((100% - 48px) / 3);
 }
 .position-image {
-  position: relative;
-  width: 360px;
-  height: 300px;
-  margin: 0 auto;
-  overflow: hidden;
 }
 .position {
+  position: relative;
+  overflow: hidden;
+}
+.text-position {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
   position: absolute;
   background: #4d5ae5;
   top: 0;
@@ -325,24 +335,13 @@ img {
   width: 100%;
   height: 100%;
   transform: translateY(100%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.position p {
-  margin-left: 32px;
-  margin-right: 32px;
-  margin-top: 40px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #f4f4fd;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.items-foto-two:hover .position {
-  transform: translateY(0);
+.items-foto-two:hover .text-position {
+  transform: translateY(0%);
 }
-.portfolio-images {
-}
+
 .items-card {
   border: 1px solid #e7e9fc;
   border-top: none;
