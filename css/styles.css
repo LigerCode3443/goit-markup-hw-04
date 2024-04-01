@@ -298,6 +298,7 @@ img {
   height: 100%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .swg-sociaal {
   fill: #f4f4fd;
 }
@@ -374,7 +375,10 @@ img {
 /* #region footer */
 .box-footer {
   display: flex;
-  gap: 120px;
+  align-items: baseline;
+}
+.text-logo-footer {
+  margin-right: 120px;
 }
 .color-footer {
   background-color: #2e2f42;
@@ -411,9 +415,11 @@ img {
   color: #fff;
   margin-bottom: 16px;
 }
+.box-footer .list-social-team {
+  gap: 16px;
+}
 .box-footer .svg-team-social:hover,
 .box-footer .svg-team-social:focus {
   background-color: #31d0aa;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* #endregion footer */
